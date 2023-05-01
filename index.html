@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Fitness</title>
+</head>
+
+<body>
+    <header class="header_main">
+        <div class="nav_main">
+            <nav class="navbar">
+                <div class="logo_box">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt=""></a>
+                </div>
+                <div class="mobile_menu">
+                    <div class="mobile_line"></div>
+                    <div class="mobile_line"></div>
+                    <div class="mobile_line"></div>
+                </div>
+                <ul class="nav_list">
+                    <li class="nav_list_item"><a href="index.html" class="nav_list_item_link active">HOME</a></li>
+                    <li class="nav_list_item"><a href="classlist.html" class="nav_list_item_link">CLASS LIST</a></li>
+                    <li class="nav_list_item"><a href="profile.html" class="nav_list_item_link">PROFILE</a></li>
+                    <li class="nav_list_item"><a href="#" class="nav_list_item_link">SIGN UP TEACHER</a></li>
+                    <li class="nav_list_item"><a href="#" class="nav_list_item_link">CONTACT US</a></li>
+                    <li class="nav_list_item">
+                        <a href="#" class="nav_list_item_link position-relative cart-link">
+                            <img src="assets/images/cart-icon.png" class="icon-width" alt="">
+                            <div class="cart-count position-absolute">
+                                2
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero_banner_main">
+            <div class="hear_content width-container">
+                <div class="sign_up_login">
+                    <div class="signup_login_top tab">
+                        <p class="sl_top sign_up active tablinks" onclick="signUp_login(event, 'signup')">Signup</p>
+                        <p class="sl_top login tablinks" onclick="signUp_login(event, 'login')">Login</p>
+                    </div>
+                    <div id="signup" class="login_content tabcontent">
+                        <h3 class="sign_up_heading">Welcome to Upwardfacingcat!</h3>
+                        <p class="sign_up_para">Lorem ipsum dolor sit amet, consectetur adipis cing elit. Aenean pretium
+                            laoreet diam, sit amet efficitur ex ultrices at. Fusce facilisis fringilla maximus.</p>
+                        <button class="create_account_btn">Create an account</button>
+                    </div>
+                    <div id="login" class="signup_content tabcontent">
+                        <div class="login_options">
+                            <div class="login_with_fb">
+                                <div class="fb_icon icon-width">
+                                    <img src="assets/images/facebook.png" alt="">
+                                </div>
+                                <p>LOG IN WITH FACEBOOK</p>
+                            </div>
+                            <div class="login_with_google">
+                                <div class="google_icon icon-width">
+                                    <img src="assets/images/google.png" alt="">
+                                </div>
+                                <p>LOG IN WITH GOOGLE</p>
+                            </div>
+                        </div>
+                        <p class="or font-size-18">Or</p>
+                        <form action="#" class="login_form">
+                            <div class="input_field">
+                                <label for="email" class="font-size-18">Email address</label>
+                                <div class="input">
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="input_field password_input">
+                                <label for="password" class="font-size-18">Passworsd</label>
+                                <div class="input">
+                                    <input type="password" id="password" required>
+                                </div>
+                            </div>
+                            <div class="input_field_checkbox">
+                                <div class="input_check">
+                                    <input type="checkbox" id="checkbox">
+                                </div>
+                                <label for="checkbox">Remember me</label>
+                            </div>
+                            <div class="logi_forget_btn">
+                                <button class="login_btn">LOG IN</button>
+                                <div class="forget_btn"><a href="#">Forget your password?</a></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="footer_main">
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="logo_box width-25">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt=""></a>
+                </div>
+                <div class="head_office_address width-25">
+                    <h4 class="head_office_heading font-size-18">HEAD OFFICE</h4>
+                    <p>Proin sed condimentum st, vitae sodales #01-23455 Lorem ipsum, Lipsum Dolores</p>
+                </div>
+                <nav class="footer_nav width-25">
+                    <ul class="footer_navlist">
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">ABOUT US</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">HOW IT WORKS</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">WHY CHOOSE US</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">PRICING</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social_links width-25">
+                    <div class="social_links_div">
+                        <h4 class="social_links_heading font-size-18">CONTACT WITH US</h4>
+                    <div class="fb_insta">
+                        <div class="facbook_icon"><a href="#"><img src="assets/images/fb.png" alt=""></a></div>
+                        <div class="instagram_icon"><a href="#"><img src="assets/images/instagram.png" alt=""></a></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">
+                <p>Copyright © Upwardfacingcat 2020. All right reserved.</p>
+                <div class="terms_condition">
+                    <ul>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- script linked here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

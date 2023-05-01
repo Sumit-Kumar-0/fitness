@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header_main">
+        <div class="nav_main">
+            <nav class="navbar">
+                <div class="logo_box">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt=""></a>
+                </div>
+                <div class="mobile_menu">
+                    <div class="mobile_line"></div>
+                    <div class="mobile_line"></div>
+                    <div class="mobile_line"></div>
+                </div>
+                <ul class="nav_list">
+                    <li class="nav_list_item"><a href="index.html" class="nav_list_item_link">HOME</a></li>
+                    <li class="nav_list_item"><a href="classlist.html" class="nav_list_item_link active">CLASS LIST</a></li>
+                    <li class="nav_list_item"><a href="profile.html" class="nav_list_item_link">PROFILE</a></li>
+                    <li class="nav_list_item"><a href="#" class="nav_list_item_link">SIGN UP TEACHER</a></li>
+                    <li class="nav_list_item"><a href="#" class="nav_list_item_link">CONTACT US</a></li>
+                    <li class="nav_list_item">
+                        <a href="#" class="nav_list_item_link position-relative cart-link">
+                            <img src="assets/images/cart-icon.png" class="icon-width" alt="">
+                            <div class="cart-count position-absolute">
+                                2
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="class_list_main width-container">
+        <h3 class="classlist_heading font-size-36">Class List</h3>
+        <div class="filter_and_class_items">
+            <div class="filter_main">
+                <p class="heading_filter">Filtered by</p>
+                <div class="filter_box">
+                    <div class="filter_field">
+                        <p class="choose_date_heading font-size-18 no_top_margin">Choose date</p>
+                        <div class="select_menu_date">
+                            <div class="select_btn">
+                                <p class="sBtn_text">Today</p>
+                                <div class="select_icon">
+                                    <img src="assets/images/dropdown-icon.png" alt="">
+                                </div>
+                            </div>
+                            <ul class="options">
+                                <li class="option">Today</li>
+                                <li class="option">1</li>
+                                <li class="option">2</li>
+                                <li class="option">3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_field">
+                        <p class="choose_date_heading font-size-18">Choose time</p>
+                        <p class="choose_time_sub_heading font-size-18">09.00am - 09.00pm</p>
+                        <div class="select_menu_time">
+                            <div class="select_btn">
+                                <p class="sBtn_text">09:00am</p>
+                                <div class="select_icon">
+                                    <img src="assets/images/dropdown-icon.png" alt="">
+                                </div>
+                            </div>
+                            <ul class="options">
+                                <li class="option">09:00am</li>
+                                <li class="option">10:00am</li>
+                                <li class="option">11:00am</li>
+                                <li class="option">12:00am</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_field">
+                        <p class="choose_date_heading font-size-18">Choose dance style</p>
+                        <div class="select_menu_choose_dance_style">
+                            <div class="select_btn">
+                                <p class="sBtn_text">All</p>
+                                <div class="select_icon">
+                                    <img src="assets/images/dropdown-icon.png" alt="">
+                                </div>
+                            </div>
+                            <ul class="options">
+                                <li class="option">All</li>
+                                <li class="option">1</li>
+                                <li class="option">2</li>
+                                <li class="option">3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_field">
+                        <p class="choose_date_heading font-size-18">Choose teacher / instructor</p>
+                        <div class="select_menu_choose_teacher">
+                            <div class="select_btn">
+                                <p class="sBtn_text">All</p>
+                                <div class="select_icon">
+                                    <img src="assets/images/dropdown-icon.png" alt="">
+                                </div>
+                            </div>
+                            <ul class="options">
+                                <li class="option">All</li>
+                                <li class="option">1</li>
+                                <li class="option">2</li>
+                                <li class="option">3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_field">
+                        <p class="choose_date_heading font-size-18">Choose level</p>
+                        <div class="select_menu_select_level">
+                            <div class="select_btn">
+                                <p class="sBtn_text">All</p>
+                                <div class="select_icon">
+                                    <img src="assets/images/dropdown-icon.png" alt="">
+                                </div>
+                            </div>
+                            <ul class="options">
+                                <li class="option">All</li>
+                                <li class="option">1</li>
+                                <li class="option">2</li>
+                                <li class="option">3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="classlist">
+                <p class="heading_filter">Showing class for : November 23, 2020</p>
+                <div class="classlist_search_input position-relative">
+                    <input type="search" placeholder="What are you looking for?">
+                    <div class="search_icon position-absolute">
+                        <img src="assets/images/search-icon.png" alt="">
+                    </div>
+                </div>
+                <div class="classes">
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="class">
+                        <div class="class_img_and_content">
+                            <div class="class_img">
+                                <img src="assets/images/classlist-img-01.png" alt="">
+                            </div>
+                            <div class="class_content">
+                                <h4 class="class_heading font-size-24">Online: Pilates Evolution by Lucy Hale</h4>
+                                <div class="class_timing">
+                                    <div class="class_timing_img">
+                                        <img src="assets/images/calendar.png" alt="">
+                                    </div>
+                                    <p class="class_time">November 23, 2020 | 01.00pm - 02.00pm (EDT)</p>
+                                </div>
+                                <p class="class_teacher_name">Assigned teacher : Lucy Hale</p>
+                                <p class="left_spots_in_class">Spots left: 0/20</p>
+                            </div>
+                        </div>
+                        <div class="class_price_and_btn">
+                            <div class="class_price_and_duration">
+                                <p class="class_price font-size-24">US$15</p>
+                                <div class="price_duration_border"></div>
+                                <p class="class_duration font-size-24">60min</p>
+                            </div>
+                            <button class="add_to_cart_btn">Add Class to Cart</button>
+                        </div>
+                    </div>
+                    <div class="load_more_class_btn">
+                        Load more classes
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_main">
+        <footer class="footer">
+            <div class="footer_top">
+                <div class="logo_box width-25">
+                    <a href="index.html"><img src="assets/images/Logo.png" alt=""></a>
+                </div>
+                <div class="head_office_address width-25">
+                    <h4 class="head_office_heading font-size-18">HEAD OFFICE</h4>
+                    <p>Proin sed condimentum st, vitae sodales #01-23455 Lorem ipsum, Lipsum Dolores</p>
+                </div>
+                <nav class="footer_nav width-25">
+                    <ul class="footer_navlist">
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">ABOUT US</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">HOW IT WORKS</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">WHY CHOOSE US</a>
+                        </li>
+                        <li class="footer_list_item">
+                            <a href="#" class="footer_nav_item_link">PRICING</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social_links width-25">
+                    <div class="social_links_div">
+                        <h4 class="social_links_heading font-size-18">CONTACT WITH US</h4>
+                        <div class="fb_insta">
+                            <div class="facbook_icon"><a href="#"><img src="assets/images/fb.png" alt=""></a></div>
+                            <div class="instagram_icon"><a href="#"><img src="assets/images/instagram.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">
+                <p>Copyright © Upwardfacingcat 2020. All right reserved.</p>
+                <div class="terms_condition">
+                    <ul>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- script linked here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // // select options for filter
+        function setupOptions(optionMenu, sBtnTextClass) {
+            const selectBtn = optionMenu.querySelector(".select_btn");
+            const options = optionMenu.querySelectorAll(".option");
+            const sBtnText = optionMenu.querySelector(`.${sBtnTextClass}`);
+
+            selectBtn.addEventListener("click", () => {
+                optionMenu.classList.toggle("active");
+            });
+
+            optionMenu.addEventListener("click", (event) => {
+                if (!event.target.matches(".option")) return;
+                sBtnText.innerHTML = event.target.innerHTML;
+                optionMenu.classList.remove("active");
+            });
+        }
+
+        setupOptions(document.querySelector(".select_menu_date"), "sBtn_text");
+        setupOptions(document.querySelector(".select_menu_time"), "sBtn_text");
+        setupOptions(document.querySelector(".select_menu_choose_dance_style"), "sBtn_text");
+        setupOptions(document.querySelector(".select_menu_choose_teacher"), "sBtn_text");
+        setupOptions(document.querySelector(".select_menu_select_level"), "sBtn_text");
+    </script>
+</body>
+
+</html>
